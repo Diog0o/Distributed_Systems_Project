@@ -1,0 +1,19 @@
+1. Client sends S (string pattern) to all Servers.
+2. Each Server locks all matching tuples once or blocks until match appears. 
+	all - that match the regex expression
+	once - if the same exact tuple exists twice, only one gets locked
+3. Each Server sends back the tuples they locked; or a refused message if at least one of the matching tuples were already blocked
+|
+|--> If all the responses were accepted and all share at least one tuple: 
+|	The client chooses one randomly from the shared tuples
+|
+|--> If not all Servers have responded within a reasonable time
+|    or if all responded but only a majority accepted
+|    or if all accepted but the intersection is empty:
+|	Repeat/Start Over 1.
+|     
+|Else: (All responded but only a minority accepted)
+	Client tells servers who made locks in 2. to release them
+	Delay(smallRandomValue)
+	Repeat/Start Over 1.
+	

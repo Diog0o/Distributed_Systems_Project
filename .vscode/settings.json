@@ -1,0 +1,10 @@
+{
+    "java.compile.nullAnalysis.mode": "disabled",
+    "python.autoComplete.extraPaths": [
+        "Contract/target/generated-sources/protobuf/python"
+    ],
+    "python.analysis.extraPaths": [
+        "Contract/target/generated-sources/protobuf/python"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
