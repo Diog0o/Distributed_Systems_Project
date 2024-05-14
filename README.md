@@ -2,28 +2,6 @@
 
 Distributed Systems Project 2024
  
-**Group GA13**
-
-**Difficulty level: I am Death incarnate!**
-
-
-### Code Identification
-
-In all source files (namely in the *groupId*s of the POMs), replace __GXX__ with your group identifier. The group
-identifier consists of either A or T followed by the group number - always two digits. This change is important for 
-code dependency management, to ensure your code runs using the correct components and not someone else's.
-
-### Team Members
-
-
-| Number | Name              | User                             | Email                                    |
-|--------|-------------------|----------------------------------|------------------------------------------|
-| 99656  | Diogo Guerreiro   | <https://github.com/Diog0o>      | <diogo.l.guerreiro@tecnico.ulisboa.pt>   |
-| 99642  | André Bento       | <https://github.com/andre-bento> | <andre.veloso.bento@tecnico.ulisboa.pt>  |
-| 102437 | Tiago Caixinha    | <https://github.com/tiago80673>  | <tiago.caixinha@tecnico.ulisboa.pt>      |
-
-## Getting Started
-
 The overall system is made up of several modules. The different types of servers are located in _ServerX_ (where X denotes stage 1, 2 or 3). 
 The clients is in _Client_.
 The definition of messages and services is in _Contract_. The future naming server
